@@ -1,0 +1,63 @@
+/* Resets */ 
+
+* {
+  box-sizing: border-box;
+}
+
+/* img {
+  max-width: 100%;
+  display: block;
+}
+
+textarea {
+  resize: none;
+  padding: 0;
+} */
+
+body, p {
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+/* Base */ 
+/* Typography */ 
+/* Body */ 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: darkgray;
+}
+main {
+  height: 550px;
+  width: 550px;
+  background: white;
+  border: 1px solid black;
+}
+/* Header */ 
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+}
+#color-picker {
+  height: 42px;
+  width: 61px;
+}
+#color-scheme-menu {
+  width: 312px;
+}
+#color-scheme-submit {
+  width: 132px;
+}
+/* Colours Section */ 
+/* Footer */ 
+footer {
+  background: white;
+  height: 42px;
+}
