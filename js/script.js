@@ -28,12 +28,16 @@ submitColorScheme.addEventListener('click', function(e) {
     console.log(data)
     data.colors.forEach(color => {
       console.log(color.hex)
+
+      displayColorSchemeHtml += `
+        <div class="bg-${color.hex.clean}">${color.hex.clean}</div>
+      `
     })
+    console.log(displayColorScheme)
+    displayColorScheme.innerHTML = displayColorSchemeHtml 
 
   })
 
 
-
-  displayColorScheme.innerHTML = displayColorSchemeHtml 
 })
 
