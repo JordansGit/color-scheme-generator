@@ -65,19 +65,22 @@ body {
 main {
   height: 550px;
   width: 550px;
-  background: white;
+  background: #FFFDFE;
+  display: grid;
+  grid-template-rows: 90px 1fr 46px;
 }
 
 /* Header */ 
 #header {
+  align-self: flex-start;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
-  height: 90px;
+  /* height: 90px; */
   padding: 1.5em 1em;
 }
 #color-picker {
-  height: 100%;
+  height: 42px;
   width: 61px;
   align-self: stretch;
 }
@@ -90,11 +93,28 @@ main {
 }
 
 /* Colours Section */ 
+#display-color-scheme, footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
 
+#display-color-scheme {
+  place-items: stretch;
+}
+
+#display-color-scheme > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Footer */ 
 footer {
-  background: white;
-  height: 46px;
+  /* background: white; */
+  /* height: 46px; */
+  place-items: center;
   font-size: 0.75rem;
+  justify-self: end;
+  width: 100%;
+  color: #2B283A;
 }
